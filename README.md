@@ -6,8 +6,8 @@
 ## Готовясь к запуску
 
 Эти инструкции позволят вам запустить копию проекта на вашем локальном компьютере в целях разработки и тестирования.
-После выполнения на вашем компьютере в двух docker-контейнерах будет развёрнут проект YaMDb.
-Образ первого контейнера собирается из директории infra_sp2 с помощью файла Dockerfile. Образ postgres находится на [DockerHub](https://hub.docker.com/_/postgres).
+Образ postgres [DockerHub](https://hub.docker.com/_/postgres).
+Образ nginx [DockerHub](https://hub.docker.com/_/nginx).
 
 ## Требования
 
