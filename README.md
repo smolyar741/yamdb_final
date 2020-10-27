@@ -52,3 +52,5 @@ docker rm $(docker ps -a -q)
 ```
 
 ![yamdb_final workflow](https://github.com/smolyar741/yamdb_final/workflows/yamdb_final%20workflow/badge.svg)
+![yamdb_final workflow](https://github.com/smolyar741/yamdb_final/workflows/yamdb_finalworkflow/badge.svg)
+
