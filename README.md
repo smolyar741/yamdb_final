@@ -30,16 +30,13 @@ $ docker-compose up
 ```
 При создании контейнера миграции выполнятся автоматически.
 
-## Тестовые данные
-
-*fixtures.json - используется для заполнения тестовыми данными.*
-```
-$ python manage.py loaddata fixtures.json
-```
-
 ## Создание суперпользователя.
-```
-$ docker-compose run <CONTAINER ID> python manage.py createsuperuser
+```sh
+$ sudo docker exec -it <CONTAINER ID> python manage.py collectstatic
+$ sudo docker exec -it <CONTAINER ID> python manage.py makemigrations
+$ sudo docker exec -it <CONTAINER ID> python manage.py migrate
+$ sudo docker exec -it <CONTAINER ID> python manage.py createsuperuser
+$ sudo docker exec -it <CONTAINER ID> python manage.py loaddata fixtures.json
 ```
 ## Выключение контейнера.
 ```
