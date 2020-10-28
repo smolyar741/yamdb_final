@@ -32,7 +32,7 @@ $ docker-compose up
 
 ## Использование контейнера.
 
-*Создание суперпользователя и инициализация данных.
+*Создание суперпользователя и инициализация данных.*
 
 ```sh
 $ sudo docker exec -it <CONTAINER ID> python manage.py collectstatic
