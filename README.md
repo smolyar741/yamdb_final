@@ -30,7 +30,10 @@ $ docker-compose up
 ```
 При создании контейнера миграции выполнятся автоматически.
 
-## Создание суперпользователя.
+## Использование контейнера.
+
+*Создание суперпользователя и инициализация данных.
+
 ```sh
 $ sudo docker exec -it <CONTAINER ID> python manage.py collectstatic
 $ sudo docker exec -it <CONTAINER ID> python manage.py makemigrations
