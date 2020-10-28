@@ -35,11 +35,11 @@ $ docker-compose up
 *Создание суперпользователя и инициализация данных.*
 
 ```sh
-$ sudo docker exec -it <CONTAINER ID> python manage.py collectstatic
-$ sudo docker exec -it <CONTAINER ID> python manage.py makemigrations
-$ sudo docker exec -it <CONTAINER ID> python manage.py migrate
-$ sudo docker exec -it <CONTAINER ID> python manage.py createsuperuser
-$ sudo docker exec -it <CONTAINER ID> python manage.py loaddata fixtures.json
+$ docker-compose exec web  python manage.py collectstatic
+$ docker exec -it <CONTAINER ID> python manage.py makemigrations
+$ docker exec -it <CONTAINER ID> python manage.py migrate
+$ docker exec -it <CONTAINER ID> python manage.py createsuperuser
+$ docker exec -it <CONTAINER ID> python manage.py loaddata fixtures.json
 ```
 ## Выключение контейнера.
 ```
